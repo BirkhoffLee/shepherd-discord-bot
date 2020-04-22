@@ -4,22 +4,7 @@ services:
   node:
     build: .
     restart: always
-    # networks:
-      # - traefik
-      # - default
-    # expose:
-    #   - 8080
-    # labels:
-    #   - traefik.enable=true
-    #   - traefik.http.routers.lf-discord-bot.rule=Host(`lf-discord-bot.birkhoff.me`)
-    #   - traefik.http.routers.lf-discord-bot.tls.certResolver=acme
-    #   - traefik.http.services.lf-discord-bot.loadbalancer.server.port=8080
     environment:
       - NODE_ENV=production
-      # - WEB_DOMAIN=lf-discord-bot.birkhoff.me
     volumes:
       - ./:/home/node/app
-
-# networks:
-#   traefik:
-#     external: true
