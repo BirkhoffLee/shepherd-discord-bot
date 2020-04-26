@@ -1,0 +1,27 @@
+{
+  "name": "discord-bot",
+  "description": "Discord Bot",
+  "repository": "https://github.com/BirkhoffLee/shepherd-discord-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "debug": "^4.1.1",
+    "discord.js": "^11.5.1",
+    "erlpack": "github:discordapp/erlpack",
+    "git-rev-sync": "^2.0.0",
+    "moment": "^2.24.0",
+    "utf-8-validate": "^5.0.2",
+    "winston": "^3.2.1",
+    "zlib-sync": "^0.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "nodemon": "^1.19.4"
+  },
+  "scripts": {
+    "test": "nodemon  -x \"clear;node\" .",
+    "start": "node index.js"
+  }
+}

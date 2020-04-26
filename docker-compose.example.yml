@@ -1,0 +1,10 @@
+version: "3.2"
+
+services:
+  node:
+    build: .
+    restart: always
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app

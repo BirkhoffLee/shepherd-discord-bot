@@ -1,0 +1,10 @@
+{
+  "prefix": ".",
+  "token": "",
+  "logoUrl": "https://assets.birkhoff.me/shepherd.jpg",
+  "ticketCloseTimeout": 15,
+  "emojiNames": ["📝", "1️⃣", "2️⃣", "3️⃣"],
+  "roleNames": ["我要入隊", "戰友", "路人甲", "其他戰隊"],
+  "activity": "Kurumi",
+  "serverGuildID": "702200813312802856"
+}

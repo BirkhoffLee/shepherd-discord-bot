@@ -1,0 +1,18 @@
+---
+- hosts: vultr
+  vars:
+    workDir: /home/birkhoff/docker-files/shepherd-discord-bot
+
+  tasks:
+    - name: Pull latest changes from GitHub
+      git:
+        repo: 'github.com:BirkhoffLee/shepherd-discord-bot.git'
+        dest: "{{ workDir }}"
+        update: yes
+    - name: Build and deploy
+      shell:
+        chdir: "{{ workDir }}"
+        cmd: >
+          docker-compose build && docker-compose up -d
+      register: result
+      changed_when: "'Recreating' in result.stderr"
