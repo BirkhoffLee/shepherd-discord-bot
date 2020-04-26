@@ -32,6 +32,7 @@ module.exports = {
         `Hostname: **${config.runtime.hostname}**\n` +
         `OS platform: **${config.runtime.platform}**\n` +
         `Load average (1m, 5m, 15m): **${load}**\n` +
+        `Source code: https://github.com/BirkhoffLee/shepherd-discord-bot\n` +
         `Author: **birkhoff#0001**`)
 
     return m.channel.send({
