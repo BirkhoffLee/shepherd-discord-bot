@@ -2,7 +2,13 @@ const os = require("os")
 const git = require('git-rev-sync')
 let config = require('./config.json')
 
-config.token = process.ENV.DISCORD_BOT_TOKEN
+if (process.env.NODE_ENV !== "production") {
+  const dotenv = require('dotenv').config({
+    path: '.env'
+  })
+}
+
+config.token = process.env.DISCORD_BOT_TOKEN
 config.runtime = {}
 config.runtime.environment = process.env.NODE_ENV || "develop"
 config.runtime.version = `${git.short()}-${git.branch()}`

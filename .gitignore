@@ -3,3 +3,4 @@ node_modules
 deploy.sh
 docker-compose.yml
 .vscode
+.env
