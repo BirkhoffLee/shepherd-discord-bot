@@ -3,7 +3,12 @@ const path = require('path')
 const logLevel = (process.env.NODE_ENV == "production") ? "info" : "debug"
 
 const formatLog = info => {
-  return `${info.timestamp} ${info.level.padEnd(15)} | ${info.message}`
+  // No timestamp if on Heroku
+  if (process.env.HEROKU_APP_NAME) {
+    return `${info.level.padEnd(15)} | ${info.message}`
+  } else {
+    return `${info.timestamp} ${info.level.padEnd(15)} | ${info.message}`
+  }
 }
 
 /**
