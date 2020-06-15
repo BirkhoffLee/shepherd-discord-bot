@@ -33,7 +33,7 @@ module.exports = client => m => {
   let permissions = cmd.permissions
 
   if (permissions == "staff") {
-    if (!m.member.roles.find(r => r.name === "團員")) {
+    if (!m.member.roles.find(r => r.name === "核心成員")) {
       return m.reply(`你權限不夠啦幹`)
     }
   } else if (permissions == "admin") {
