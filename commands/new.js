@@ -31,7 +31,7 @@ module.exports = {
       { id: user, allowed: perms },
       { id: selectRole("@everyone"), denied: perms },
       { id: selectRole("幹你媽的機器人"), allowed: perms },
-      { id: selectRole("團員"), allowed: perms }
+      { id: selectRole("核心成員"), allowed: perms }
     ]
 
     return m.guild.createChannel(ticketName, {
