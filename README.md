@@ -1,5 +1,5 @@
 # shepherd-discord-bot
-A Discord bot for Rainbow Six Siege Professional Team Shepherd's Discord server
+A Discord bot for Rainbow Six Siege Professional Team Shepherd's Discord server. It's no longer being maintained.
 
 # Features
 * A simple but powerful ticket system
@@ -16,7 +16,7 @@ A Discord bot for Rainbow Six Siege Professional Team Shepherd's Discord server
 * `.prune`: prune last *n* messages
 * `.info`: prints out runtime information
 
-This repository also features best practices for a Node.js app Dockerfile. Procfile is for Heroku but I no longer use it.
+Procfile is for Heroku but I no longer use it.
 
 # Usage
 I recommend the provided Docker Compose config when deploying to production.
@@ -33,10 +33,6 @@ I use nodemon to auto restart the app when code changes. It's set to debug mode 
 $ npm i
 $ npm test
 ```
-
-# Roadmap
-I'm planning to make this bot more flexible and useful in everyday Discord usage.  
-In terms of the code I'm going to do more DRY. I've found a lot of repeated codes and I'll clean them up.
 
 # License
 This open source software is released under [MIT License](LICENSE).
