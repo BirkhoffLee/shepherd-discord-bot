@@ -11,7 +11,7 @@
     "discord.js": "^11.5.1",
     "erlpack": "github:discordapp/erlpack",
     "git-rev-sync": "^2.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "utf-8-validate": "^5.0.2",
     "winston": "^3.2.1",
     "zlib-sync": "^0.1.6"
